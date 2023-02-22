@@ -17,7 +17,7 @@ export const ProductDetails = () => {
   const handleCart = product => {
     if (cart === "Add to Cart") {
       dispatch(Add(product));
-      setCart("Remove From Cart");
+      setCart("Remove from Cart");
     } else {
       dispatch(Delete(product));
       setCart("Add to Cart");

@@ -2,15 +2,17 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const addDeleteSlice = createSlice({
   name: "addremove",
-  initialState,
+  initialState: {
+    item: [],
+  },
   reducers: {
     Add: (state, action) => {
-      return state, action.payload;
+      state.item = [...state.item, action.payload];
     },
     Delete: (state, action) => {
-      return (state = state.filter(x => {
-        return x.id != action.payload.id;
-      }));
+      state.item.filter(x => {
+        x.id != action.payload.product.id;
+      });
     },
   },
 });

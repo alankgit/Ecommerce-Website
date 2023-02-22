@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import incDecReducer from "./reducer/index";
+import storeRedux from "./index";
 
 export default configureStore({
-  reducer: incDecReducer,
+  reducer: storeRedux,
 });
 
 // fuck its not working

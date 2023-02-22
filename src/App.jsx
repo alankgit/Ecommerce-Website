@@ -7,6 +7,7 @@ import { About } from "./component/About";
 import { Contact } from "./component/Contact";
 import { Header } from "./component/Header";
 import { ProductDetails } from "./component/ProductDetails";
+import { Carti } from "./component/Carti";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/product' element={<Product />} />
         <Route path='/product/:id' element={<ProductDetails />} />
+        <Route path='/cart' element={<Carti />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
